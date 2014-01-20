@@ -97,24 +97,20 @@ while (True): # will break out when End Request
 
     # Need to move to next question
 
-
-    if (countOfNumbers > 1): # handle null case
-
-
-      questionText = "Is your number greater than my guess of " + str(guess) + " ? (Y/N)"
-      userResponse = questionUser(questionText)
+    questionText = "Is your number greater than my guess of " + str(guess) + " ? (Y/N)"
+    userResponse = questionUser(questionText)
       
-      if (userResponse == "E"):
-        break # << Break is here to end loop
+    if (userResponse == "E"):
+      break # << Break is here to end loop
 
-      if (userResponse == "Y"):
-        for listNumber in remainingNumbers[:]:
-          if listNumber <= guess:
-            remainingNumbers.remove(listNumber)
-      else :
-        for listNumber in remainingNumbers[:]:
-          if listNumber >= guess:
-            remainingNumbers.remove(listNumber)
+    if (userResponse == "Y"):
+      for listNumber in remainingNumbers[:]:
+        if listNumber <= guess:
+          remainingNumbers.remove(listNumber)
+    else :
+      for listNumber in remainingNumbers[:]:
+        if listNumber >= guess:
+          remainingNumbers.remove(listNumber)
 
     
     print("Remaining Guesses:", remainingNumbers,".")
