@@ -1,6 +1,6 @@
 # number request.py
 # Written by Michael R Wild
-# Maybe be used as you wish. No license. 
+# Maybe be used as you wish. No license. Version 1.0
 
 """This is an example program that guesses a number between 1-20. It uses two methods, random and picking 1/2 way each time."""
 
