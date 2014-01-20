@@ -2,6 +2,9 @@
 # Written by Michael R Wild
 # Maybe be used as you wish. No license. 
 
+"""This is an example program that guesses a number between 1-20. It uses two methods, random and picking 1/2 way each time."""
+
+
 import random
 
 while (True): # will break out when End Request
@@ -101,4 +104,4 @@ while (True): # will break out when End Request
 
 # End of loop
 print("End of line...")
-                          
+                            
